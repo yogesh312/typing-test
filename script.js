@@ -45,6 +45,16 @@ function spellCheck() {
 
 }
 
+// Start the timer:
+function start() {
+    let textEnterdLength = testArea.value.length;
+    if (textEnterdLength === 0 && !timerRunning) {
+        timerRunning = true;
+        interval = setInterval(runTimer, 10);
+    }
+    console.log(textEnterdLength);
+}
+
 
 
 // Event listeners for keyboard input and the reset
